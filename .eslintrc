@@ -10,5 +10,9 @@
   "parserOptions": {
     "sourceType": "module",
     "allowImportExportEverywhere": true
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "react/no-unused-state": "off"
   }
 }
