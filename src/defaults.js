@@ -6,7 +6,7 @@ const LANGUAGE = 'en';
 const TRANSLATIONS = {};
 
 const TRANSLATOR = ({ language, translations, id }) =>
-  get(translations, combineLanguageWithId(language, id));
+  get(translations, combineLanguageWithId(language, id), id);
 
 const CONTEXT = {
   language: LANGUAGE,
@@ -14,9 +14,4 @@ const CONTEXT = {
   translator: TRANSLATOR,
 };
 
-export {
-  LANGUAGE,
-  TRANSLATIONS,
-  TRANSLATOR,
-  CONTEXT,
-};
+export { LANGUAGE, TRANSLATIONS, TRANSLATOR, CONTEXT };
