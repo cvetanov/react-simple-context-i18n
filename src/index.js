@@ -1,2 +1,4 @@
-const demo = 'demo';
-export default demo;
+import TranslationProvider from './components/TranslationProvider';
+import Message from './components/Message';
+
+export { TranslationProvider, Message };
