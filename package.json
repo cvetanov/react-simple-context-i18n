@@ -11,6 +11,7 @@
   "scripts": {
     "lint": "eslint --fix src/**/*.js",
     "format": "prettier --trailing-comma es5 --single-quote --write src/**/*.js*",
+    "format:example": "prettier --trailing-comma es5 --single-quote --write example/src/**/*.js*",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",

@@ -6,10 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-simple-i18n": "link:..",
-    "react-scripts": "^1.1.1"
+    "react": "16.3",
+    "react-dom": "16.3",
+    "react-scripts": "^1.1.1",
+    "react-simple-i18n": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

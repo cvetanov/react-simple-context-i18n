@@ -1,0 +1,36 @@
+import React, { Component } from 'react';
+import { TranslationProvider } from 'react-simple-i18n';
+import Updater from './Updater';
+import Text from './Text';
+
+export default class Demo extends Component {
+  state = {
+    lang: 'en',
+    translations: {
+      en: {
+        nav: {
+          title: 'nav title en',
+          subTitle: 'nav subtitle en',
+        },
+      },
+      de: {
+        nav: {
+          title: 'nav title de',
+          subTitle: 'nav subtitle de',
+        },
+      },
+    },
+  };
+
+  updateLanguage = lang => this.setState({ lang });
+
+  render() {
+    const { lang, translations } = this.state;
+    return (
+      <TranslationProvider language={lang} translations={translations}>
+        <Updater onUpdate={this.updateLanguage} />
+        <Text />
+      </TranslationProvider>
+    );
+  }
+}
