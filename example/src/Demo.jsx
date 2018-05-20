@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TranslationProvider } from 'react-simple-i18n';
+import { TranslationProvider } from 'react-simple-context-i18n';
 import Updater from './Updater';
 import Text from './Text';
 

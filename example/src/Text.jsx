@@ -1,5 +1,5 @@
 import React from 'react';
-import { Message } from 'react-simple-i18n';
+import { Message } from 'react-simple-context-i18n';
 
 const Text = () => (
   <React.Fragment>

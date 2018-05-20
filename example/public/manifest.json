@@ -1,6 +1,6 @@
 {
-  "short_name": "react-simple-i18n",
-  "name": "react-simple-i18n",
+  "short_name": "react-simple-context-i18n",
+  "name": "react-simple-context-i18n",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
