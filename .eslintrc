@@ -13,6 +13,7 @@
   },
   "rules": {
     "linebreak-style": "off",
+    "no-confusing-arrow": "off",
     "react/no-unused-state": "off",
     "react/jsx-filename-extension": "off"
   }

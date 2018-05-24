@@ -1,6 +1,6 @@
-import React from 'react';
+import createReactContext from 'create-react-context';
 import { CONTEXT } from './defaults';
 
-const TranslationContext = React.createContext(CONTEXT);
+const TranslationContext = createReactContext(CONTEXT);
 
 export default TranslationContext;

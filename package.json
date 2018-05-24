@@ -21,12 +21,14 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "meeseeks-get": "^1.0.1"
+    "create-react-context": "^0.2.2",
+    "meeseeks-get": "^1.0.1",
+    "react-lifecycles-compat": "^3.0.4"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
+    "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
