@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TranslationContext from '../context';
+import safelyRenderString from '../tools/safety';
 
 const Message = ({ id }) => (
   <TranslationContext.Consumer>
     {({ language, translations, translator }) =>
-      translator({ language, translations, id })
+      safelyRenderString(translator({ language, translations, id }))
     }
   </TranslationContext.Consumer>
 );

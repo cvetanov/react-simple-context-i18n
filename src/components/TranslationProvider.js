@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { polyfill } from 'react-lifecycles-compat';
 
 import TranslationContext from '../context';
 import { LANGUAGE, TRANSLATIONS, TRANSLATOR } from '../defaults';
 
-export default class TranslationProvider extends Component {
+class TranslationProvider extends Component {
   static getDerivedStateFromProps = (nextProps, { context }) => {
     const {
       translations: currentTranslations,
@@ -60,3 +61,7 @@ TranslationProvider.defaultProps = {
   translations: TRANSLATIONS,
   translator: TRANSLATOR,
 };
+
+polyfill(TranslationProvider);
+
+export default TranslationProvider;

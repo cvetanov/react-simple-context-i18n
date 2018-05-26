@@ -7,9 +7,7 @@ const Updater = ({ onUpdate }) => (
   <ul>
     {languages.map(language => (
       <li key={language}>
-        <button onClick={() => onUpdate(language)}>
-          {language}
-        </button>
+        <button onClick={() => onUpdate(language)}>{language}</button>
       </li>
     ))}
   </ul>

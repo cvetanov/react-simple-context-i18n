@@ -28,8 +28,10 @@ export default class Demo extends Component {
     const { lang, translations } = this.state;
     return (
       <TranslationProvider language={lang} translations={translations}>
-        <Updater onUpdate={this.updateLanguage} />
-        <Text />
+        <div>
+          <Updater onUpdate={this.updateLanguage} />
+          <Text />
+        </div>
       </TranslationProvider>
     );
   }
